@@ -1,0 +1,280 @@
+body{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin:0;
+  font-family: arial;
+  max-height: 100vh;
+}
+.container{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bg1.png") no-repeat fixed center;
+  background-size: cover;
+}
+br{
+  display:none;
+}
+.homepage{
+  position:absolute;
+  top:0;
+}
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  width: 90%;
+  margin:0 auto;
+  padding-top: 20px;
+}
+nav{
+  height:100%;
+}
+nav a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  transition: .1s ease;
+  font-size: 1.25em;
+  padding-right:20px;
+  font-size: 1.4em;
+}
+#lastitem{
+  padding:0;
+}
+.logo:hover{
+fill:red;
+}
+nav a:hover{
+  transition: .1s ease;
+}
+.logo{
+  width:5%;
+  transition: .1s ease;
+}
+svg{
+  width:100%;
+}
+h1{
+  font-size: 3em;
+  margin-top: 5%;
+}
+.awsom{
+  font-size: 2.5em;
+}
+main{
+  width: 60%;
+  margin:0 auto;
+}
+p{
+ font-size: 1.6em;
+ margin-bottom: 10%;
+}
+h2{
+  font-size: 3em;
+
+}
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: .75em;
+  padding:1%;
+}
+footer p{
+  width: 60%;
+  margin:0 auto;
+}
+hr{
+  background-color: black;
+  height: 1px;
+  border:none;
+  width: 80%;
+}
+a{
+  font-size: 1.6em;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  transition: .1s ease;
+}
+a:hover{
+  color:red;
+  transition: .1s ease;
+}
+h3{
+  margin-top: 5%;
+  font-size: 2em;
+}
+ul{
+   font-size: 1.25em;
+   margin-bottom: 10%;
+}
+/* Gallery Code */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  width: 80%;
+  margin:0 auto;
+}
+.empty{
+  margin-bottom: 2.5vh;
+}
+.item{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 66vh;
+}
+.item a{
+  display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+color: rgba(255, 0, 0, 0);
+background-color: rgba(255, 0, 0, 0);
+transition: .25s ease
+}
+.item a:hover{
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: .25s ease
+}
+/* backgrounds for each of the gallery items */
+.one{
+  background: url('../wildWest/trainTracks.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.two{
+  background: url('../3danimation/thumbnail.png');
+  background-size:cover;
+  background-position: right;
+}
+.three{
+  background: url('../bedroom/wakelingFinalBedroom1.png');
+  background-size: cover;
+}
+.four{
+  background: url('../adobe/image0.jpeg');
+  background-size: cover;
+}
+.five{
+  background: url('../adobe/juicebox.jpg');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-color: black;
+}
+.six{
+  background: url('../adobe/Champ_wakeling.png');
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: bottom;
+}
+.seven{
+  background: url('../parallax/images/image0.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.eight{
+  background: url('../purintonTreeFarm/images/bg.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.nine{
+  background: url('../webDev_07/images/clo.jpg');
+  background-size: cover;
+}
+.ten{
+  background: url('../drawing/image6.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.eleven{
+  background: url('../drawing/image2.jpeg');
+  background-size: cover;
+    background-position: center;
+}
+.twelve{
+  background: url('../drawing/image7.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+.displayNone{
+  display: none;
+}
+#margin{
+  margin-bottom: 5%;
+}
+/* responsive stuff */
+@media only screen and (max-width: 1920px){
+
+  .awsom{
+  font-size: 1.9em;
+  }
+  svg{
+  width:100px;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .gallery{
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .six{
+    background-size:cover;
+  }
+  .four{
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 720px){
+  header{
+    padding-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  nav{
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+    font-size: 1.25em;
+  }
+  .awsom{
+    margin: 20px;
+    font-size: 3em;
+  }
+  .container{
+    background:none;
+  }
+  main{
+    font-size: .9em;
+    width: 80%;
+  }
+  footer p{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px){
+br{
+  display:block;
+}
+}
