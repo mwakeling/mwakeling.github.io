@@ -1,0 +1,129 @@
+body{
+  font-family: Roboto;
+  justify-content: flex-start;
+  margin:0;
+  background:#333;
+}
+h1{
+  font-family: Montserrat;
+}
+header{
+  width:100%;
+  background: #F1F3F4;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 40px;
+  border-bottom: 2px solid black;
+}
+audio{
+  height: 40px;
+  width: 30%;
+  background-color: #F1F3F4;
+
+}
+header h3{
+  width: 40%;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  text-align: center;
+  padding: 10px;
+  color:black;
+  font-size: 100%;
+  border-right: 1px solid black;
+}
+header a{
+  color:black;
+  padding:10px;
+  text-align: center;
+  width:15%;
+  text-decoration: none;
+  transition: background .1s;
+  font-size: 1.2em;
+  border-right: 1px solid black;
+}
+a:hover{
+  background-color: #111;
+  color: white;
+  transition: .3s;
+}
+main{
+  width: 1000px;
+  margin: 0 auto;
+  border: 2px solid black;
+  margin-bottom: 20px;
+  background: white;
+
+}
+.button{
+  text-align: center;
+  outline:none;
+  padding: 50px;
+  color: white;
+}
+#cookies{
+ border: none;
+ background: none;
+ transition: background .3s;
+}
+.theMan {
+  display:none;
+}
+.goldenclo{
+  display: none;
+}
+#winner{
+  display: none;
+}
+div a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+hr{
+  margin:0;
+  padding:0;
+  border: 1px solid black
+
+}
+div h2{
+  text-align: center;
+  font-family: Montserrat;
+  color: white;
+  margin:0;
+  padding: 20px;
+  background: #FDC830;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#cookies:hover{
+  background-color: white;
+  border-radius: 50%;
+  transition: background .3s;
+}
+
+
+@media (max-width:1050px) {
+  body{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  main{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    height: auto;
+
+  }
+  header h3{
+    font-size: 80%;
+  }
+
+
+}
