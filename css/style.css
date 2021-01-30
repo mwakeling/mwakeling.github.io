@@ -240,7 +240,7 @@ transition: .25s ease
 }
 @media only screen and (max-width: 720px){
   header{
-    padding-top: 0px;
+    padding-top: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
