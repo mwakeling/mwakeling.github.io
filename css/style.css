@@ -282,4 +282,12 @@ transition: .25s ease
 br{
   display:block;
 }
+  .homepage{
+  position:relative;
+}
+.container{
+  display:flex;
+  flex-direction:column;
+
+}
 }
